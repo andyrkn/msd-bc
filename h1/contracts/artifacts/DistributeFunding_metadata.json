@@ -1,0 +1,121 @@
+{
+	"compiler": {
+		"version": "0.7.0+commit.9e61f92b"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "identifier",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "ratio",
+						"type": "uint256"
+					}
+				],
+				"name": "added",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "identifier",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "routed",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address payable",
+						"name": "_beneficiary",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_ratio",
+						"type": "uint256"
+					}
+				],
+				"name": "add",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "distribute",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"stateMutability": "payable",
+				"type": "receive"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"localhost/contracts/DistributeFunding.sol": "DistributeFunding"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"localhost/contracts/DistributeFunding.sol": {
+			"keccak256": "0x4555f19ba5a2aa4fa75dc841a96567c6eba36cab1f0f1d9141ccd8b1457e95ee",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://b5b3507630a41747b434c993643d43920d5aadcf174a8e70c940dbe7e2539f1c",
+				"dweb:/ipfs/QmcGMtL1FnqnZug6ETs5Rvjk7Lij6aGw2c76UJzn7aoV1C"
+			]
+		},
+		"localhost/contracts/Ownable.sol": {
+			"keccak256": "0x06e6f6bb0fd5914bbc8994bc773fd1f7fb89cbe714b1ed03685cd32aa075aa59",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://46a9a4e93d759b609e5861ad47da6c6f317d303b0c51658a729542bea7c9b2a7",
+				"dweb:/ipfs/Qmc6PS5RokHQNe9cfnFSko34fLV1BjoNtHZAUax9ybT981"
+			]
+		}
+	},
+	"version": 1
+}
